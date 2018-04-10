@@ -304,7 +304,7 @@ $( document ).ready(function() {
 								var ifItDisabled2 = 'Soglasje podpisano';	
 								if (jQuery.inArray(value, userArticles) == -1) { ifItDisabled = ""; ifItDisabled2 = 'Soglašam s tem členom';} /*if article hash is not found in users articles, leave checkbox active*/
 								
-								$("#articlelist").append('<div class="card article"><div class="articlehash white teal-text text-lighten-2">Zgoščen člen: <span>'+value+'</span></div><div class="card-content"><p class="flow-text">'+result+'</p></div><div class="card-action"><div class="row"><div class="col s12 center-align"><input type="checkbox" id="'+value+'" '+ifItDisabled+'/><label for="'+value+'" class="flow-text">'+ifItDisabled2+'</label></div></div></div></div>');
+								$("#articlelist").append('<div class="card article"><div class="articlehash white teal-text text-lighten-2">Zgoščen člen: <span>'+value+'</span></div><div class="card-content"><p class="1flow-text">'+result+'</p></div><div class="card-action"><div class="row"><div class="col s12 center-align"><input type="checkbox" id="'+value+'" '+ifItDisabled+'/><label for="'+value+'" class="flow-text">'+ifItDisabled2+'</label></div></div></div></div>');
 
 							} else console.error(error);
 						});
