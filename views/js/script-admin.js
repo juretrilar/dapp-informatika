@@ -389,7 +389,6 @@ $(document).ready(function () {
 
                 $("#articlelist").append('<div class="card article"><div class="articlehash white teal-text text-lighten-2">Article hash: <span>In creation</span></div><div class="card-content"><p class="article-text">' + newarticlestring + '</p></div><div class="card-action"><div class="row"><div class="col s12 center-align"><div class="progress"><div class="indeterminate"></div></div></div></div></div></div>');
 
-
             } else {
                 $("#transactionid").html("Rejected");
                 console.error("Rejected: " + error);

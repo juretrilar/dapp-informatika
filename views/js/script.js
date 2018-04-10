@@ -318,7 +318,6 @@ $( document ).ready(function() {
         $("#signcontract").click(function() {
 		
 		
-		
 		$('#modal1').modal('open');
 		
 			
