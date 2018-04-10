@@ -102,23 +102,9 @@ $( document ).ready(function() {
                 });
                 
         /* smartcontract reference */
-		var smartcontractaddress = "0x91a3d657893b8c85ed6913c29100564a53bec330"; /* 1st SET SC address*/	      
+		var smartcontractaddress = "0x3d9570e5a29ce6061f233b882d1a26545ab58526"; /* 1st SET SC address*/	      
         /*INSERT ABI HERE*/
         var FinalContract = web3.eth.contract([
-	{
-		"constant": true,
-		"inputs": [],
-		"name": "contractCreatorAddress",
-		"outputs": [
-			{
-				"name": "",
-				"type": "address"
-			}
-		],
-		"payable": false,
-		"stateMutability": "view",
-		"type": "function"
-	},
 	{
 		"constant": false,
 		"inputs": [
@@ -157,18 +143,31 @@ $( document ).ready(function() {
 		"type": "function"
 	},
 	{
-		"constant": true,
+		"constant": false,
 		"inputs": [
 			{
-				"name": "hash",
-				"type": "bytes32"
+				"name": "_address",
+				"type": "address"
+			},
+			{
+				"name": "_articles",
+				"type": "bytes32[]"
 			}
 		],
-		"name": "getValueByHash",
+		"name": "userSignArticles",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "contractCreatorAddress",
 		"outputs": [
 			{
 				"name": "",
-				"type": "string"
+				"type": "address"
 			}
 		],
 		"payable": false,
@@ -204,36 +203,32 @@ $( document ).ready(function() {
 		"type": "function"
 	},
 	{
-		"constant": false,
-		"inputs": [
+		"constant": true,
+		"inputs": [],
+		"name": "getUserList",
+		"outputs": [
 			{
-				"name": "_address",
-				"type": "address"
-			},
-			{
-				"name": "_articles",
-				"type": "bytes32[]"
+				"name": "",
+				"type": "address[]"
 			}
 		],
-		"name": "userSignArticles",
-		"outputs": [],
 		"payable": false,
-		"stateMutability": "nonpayable",
+		"stateMutability": "view",
 		"type": "function"
 	},
 	{
 		"constant": true,
 		"inputs": [
 			{
-				"name": "",
-				"type": "address"
+				"name": "hash",
+				"type": "bytes32"
 			}
 		],
-		"name": "users",
+		"name": "getValueByHash",
 		"outputs": [
 			{
-				"name": "balanceOf",
-				"type": "uint256"
+				"name": "",
+				"type": "string"
 			}
 		],
 		"payable": false,
@@ -265,12 +260,17 @@ $( document ).ready(function() {
 	},
 	{
 		"constant": true,
-		"inputs": [],
-		"name": "getUserList",
-		"outputs": [
+		"inputs": [
 			{
 				"name": "",
-				"type": "address[]"
+				"type": "address"
+			}
+		],
+		"name": "users",
+		"outputs": [
+			{
+				"name": "balanceOf",
+				"type": "uint256"
 			}
 		],
 		"payable": false,

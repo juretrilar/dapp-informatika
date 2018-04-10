@@ -3,7 +3,7 @@ pragma solidity ^0.4.18;
 contract FinalContract {
  
  address public contractCreatorAddress = msg.sender; 
- string public contractName = "Pogoji poslovanja"; /* your custom contrat name */
+ string public contractName = "Pogodba o uporabi podatkovnih storitev dostopa do merilnih podatkov odjemalca/proizvajalca električne energije"; /* your custom contrat name */
  
  struct User { 
         bytes32[] activeArticles; /* users articles array */
