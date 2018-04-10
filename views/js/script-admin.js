@@ -40,7 +40,7 @@ $(document).ready(function () {
         web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
         /* Connect to a geth server over JSON-RPC*/
     }
-
+ 
     /* which network are we on*/
     web3.version.getNetwork((err, netId) => {
         switch(netId) {
