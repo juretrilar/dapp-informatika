@@ -32,7 +32,7 @@
 		<div class="row dark">
         <div class="col s5 offset-s1">			
 			<a href="/" class="brand-logo"></a>
-			<div class="infolabeldark red-text text-lighten-4">Contract provider</div>
+			<div class="infolabeldark red-text text-lighten-4">Dobavitelj</div>
 		</div>
 		<div class="col s5 right-align">			
 			<a href="/" class="red-text text-lighten-4"><i class="material-icons">arrow_back</i><i class="material-icons">class</i></a>
@@ -43,13 +43,13 @@
           
 		  <div class="col s5 offset-s1">
 		  
-  		    <div class="infolabeldark red-text text-lighten-4">Your public Admin ID</div>
+  		    <div class="infolabeldark red-text text-lighten-4">Vaša upravljalska dentiteta</div>
             <div class="user chip  red darken-4">
 				<i class="material-icons" style="font-size:13px;">account_balance_wallet</i>
 				<span class="identification">no id</span>
 			</div>
 			<div class="dividerdark"></div>
-            <div class="infolabeldark red-text text-lighten-4">Your tokens</div>
+            <div class="infolabeldark red-text text-lighten-4">Vaši žetoni</div>
 			<div class="user chip  red darken-4">
 				<i class="material-icons" style="font-size:13px;">group_work</i>
 				<span id="tokenbalance">0</span>
@@ -58,15 +58,15 @@
 
           <div class="col s5 right-align">
             
-			<div class="infolabeldark red-text text-lighten-4">Ethereum network</div>
+			<div class="infolabeldark red-text text-lighten-4">Ethereum omrežje</div>
             <div class="user chip white-text red darken-4">
 				<i class="material-icons" style="font-size:13px;">share</i>
 				<span id="network">no network</span>
 			</div>
 			<div class="dividerdark"></div>
-            <div class="infolabeldark red-text text-lighten-4">Last blocks mined
+            <div class="infolabeldark red-text text-lighten-4">Zadnji ustvarjeni bloki
 			
-			</div> 
+			</div>
 			<div id="lastblocks">
 				<!--<div class="chip blue-grey-text text-accent-2 red darken-4"></div>-->	
 				 <div class="progress blockprogress red darken-4"><div class="indeterminate red lighten-2"></div></div>
@@ -90,11 +90,11 @@
           <div class="col offset-s1 s10">        
 			<div class="card article white">            
             <div class="card-content newarticleinputsection">
-			<h5>Create new article</h5>
+			<h5>Ustvari nov člen</h5>
                 <div class="row">
 					<div class="input-field col s12">
 						<textarea id="newarticletext" class="materialize-textarea"></textarea>
-						<label for="newarticletext">New article text</label>
+						<label for="newarticletext">Vsebina novega člena</label>
 					</div>
 				</div>
             </div>
@@ -102,7 +102,7 @@
               <div class="row">			  
 			  <div class="col s12 right-align">
 			
-			<a id="newarticle" class="waves-effect waves-light btn-large red modal-trigger" href="#modal1"><i class="material-icons right">arrow_forward</i>Add new</a>
+			<a id="newarticle" class="waves-effect waves-light btn-large red modal-trigger" href="#modal1"><i class="material-icons right">arrow_forward</i>Dodaj</a>
 			
 			  </div>			  
 			  </div>			  
@@ -116,7 +116,7 @@
 		<div class="row white roundcornerleftbottom" style="margin-bottom:0px; padding:30px 0;">
           <div class="col offset-s1 s10">        
 		  
-		  <h5>Known accounts token balances</h5>
+		  <h5>Identitet in stanje žetonov</h5>
 		  <br>
 		  <ul id="UserAccountsBalances" class="collection">		
 			
@@ -135,17 +135,17 @@
 		<div class="row contractinfo">
           <div class="col offset-s1 s10 voffset center-align">
             <div class="card-panel">
-              <span class="infolabel red-text text-lighten-4">Contract name</span>
+              <span class="infolabel red-text text-lighten-4">Ime pogodbe</span>
 
               <h4 class="contractname">*</h4>
 
               <div class="infolabelline">
-                <span class="infolabel red-text text-lighten-4">Contract address</span>
+                <span class="infolabel red-text text-lighten-4">Naslov pogodbe</span>
               </div>
               <div class="contractaddress infoaddressfield red-text text-lighten-1 chip red lighten-5">*</div>
 
               <div class="infolabelline">
-                <span class="infolabel red-text text-lighten-4">Contract creator</span>
+                <span class="infolabel red-text text-lighten-4">Ustvarjalec pogodbe</span>
               </div>
               <div class="contractcreator infoaddressfield red-text text-lighten-1 chip red lighten-5">*</div>
 			  
@@ -169,18 +169,18 @@
 
   <div id="modal1" class="modal modal-fixed-footer">
     <div class="modal-content">
-      <h4>Transaction details</h4>
+      <h4>Podrobnosti transakcije</h4>
 	  
 	  <ul class="collection">      
-        <li class="collection-item"><div>Your Admin ID<span href="#!" class="secondary-content"><div class="identification">*</div></span></div></li>
+        <li class="collection-item"><div>Vaša administratorska identiteta<span href="#!" class="secondary-content"><div class="identification">*</div></span></div></li>
 		
-		<li class="collection-item"><div>Contract name<span href="#!" class="secondary-content"><div class="contractname">*</div></span></div></li>
+		<li class="collection-item"><div>Ime pogodbe<span href="#!" class="secondary-content"><div class="contractname">*</div></span></div></li>
 		
-		<li class="collection-item"><div>Contract address<span href="#!" class="secondary-content"><div class="contractaddress">*</div></span></div></li>
+		<li class="collection-item"><div>Naslov pogodbe<span href="#!" class="secondary-content"><div class="contractaddress">*</div></span></div></li>
 		
-		<li class="collection-item"><div>Contract creator<span href="#!" class="secondary-content"><div class="contractcreator">*</div></span></div></li>
+		<li class="collection-item"><div>Ustvarjalec pogodbe<span href="#!" class="secondary-content"><div class="contractcreator">*</div></span></div></li>
 		
-		<li class="collection-item"><div>Transaction id<span class="secondary-content right-align" style="min-width:200px;">
+		<li class="collection-item"><div>Id. transakcije<span class="secondary-content right-align" style="min-width:200px;">
 		<div id="transactionid">
 		<div class="progress">
 			<div class="indeterminate"></div>
@@ -200,15 +200,15 @@
  
   <div id="noadmin" class="modal modal-fixed-footer">
     <div class="modal-content">
-      <h4>Invalid credentials</h4>
+      <h4>Nepravilni dostop</h4>
 	  <p class="flow-text">
-	  Please provide smartcontract owner credentials via Metamask which match your account.
+	  Uporabite identiteto ustvarjalca pogodbe (dobavitelj) prek vtičnika Metamask.
 	  <br>
 	  <br>
 	  <span class="contractcreator"></span>
 	  <br>
 	  <br>
-	  Open Metamask plugin and select user wallet account that has created smartcontract in order to continue and manage user token balances, add new articles and view participants options.
+	  Odprite vtičnik Metamask in označite uporabnikovo identiteto, ki je objavila to pametno pogodbo. Šele potem lahko nadaljujete z upravljanjem identitet, stanja žetovnov, dodajanjem novih členov in pregledate kdo je podpisal posamezne člene v pogodbi.
 	  </p>
     </div>
   </div>
