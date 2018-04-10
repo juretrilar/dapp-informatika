@@ -42,7 +42,7 @@ $(document).ready(function () {
     }
 
     /* which network are we on*/
-    web3.version.getNetwork((err, netId) = > {
+    web3.version.getNetwork((err, netId) => {
         switch(netId) {
         case
             "1"
