@@ -301,8 +301,8 @@ $( document ).ready(function() {
 						FinalContract.getValueByHash(value ,function(error, result){ /* itterate trough previus array // value = input hash */
 							if(!error) { 					
 								var ifItDisabled = 'checked="checked" disabled="disabled"';	
-								var ifItDisabled2 = 'I agreed with this article';	
-								if (jQuery.inArray(value, userArticles) == -1) { ifItDisabled = ""; ifItDisabled2 = 'I agree with this article';} /*if article hash is not found in users articles, leave checkbox active*/
+								var ifItDisabled2 = 'S tem členom sem se strinjal';	
+								if (jQuery.inArray(value, userArticles) == -1) { ifItDisabled = ""; ifItDisabled2 = 'S tem členom se strinjam';} /*if article hash is not found in users articles, leave checkbox active*/
 								
 								$("#articlelist").append('<div class="card article"><div class="articlehash white teal-text text-lighten-2">Article hash: <span>'+value+'</span></div><div class="card-content"><p class="flow-text">'+result+'</p></div><div class="card-action"><div class="row"><div class="col s12 center-align"><input type="checkbox" id="'+value+'" '+ifItDisabled+'/><label for="'+value+'" class="flow-text">'+ifItDisabled2+'</label></div></div></div></div>');
 
@@ -343,7 +343,7 @@ $( document ).ready(function() {
 					$("#transactionid").html('<a href="https://ropsten.etherscan.io/tx/'+result+'" target="_blank">'+result+'</a>');								
 				} else {
 					$("#transactionid").html("Rejected");	
-					console.error("Rejected: "+error);
+					console.error("Zavrnjeno: "+error);
 				}
                 });			
 				
