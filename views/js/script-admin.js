@@ -363,7 +363,7 @@ $(document).ready(function () {
                         var participants = ArticlesUsers[value];
                         if (typeof participants === 'undefined' || !participants) participants = "/";
 
-                        $("#articlelist").append('<div class="card article"><div class="articlehash white teal-text text-lighten-2">Zgoščen člen: <span>' + value + '</span></div><div class="card-content"><p class="flow-text">' + result + '</p></div><div class="card-action"><div class="row"><div class="col s12 left-align">MM z zgoščenim podpisom: ' + participants + '</div></div></div></div>');
+                        $("#articlelist").append('<div class="card article"><div class="articlehash white teal-text text-lighten-2">Zgoščen člen: <span>' + value + '</span></div><div class="card-content"><p class="flow-text">' + result + '</p></div><div class="card-action"><div class="row"><div class="col s12 left-align">Id: ' + participants + '</div></div></div></div>');
 
                     } else console.error(error);
                 });
